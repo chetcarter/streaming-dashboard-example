@@ -9,7 +9,7 @@ const Card = ({ title }) => {
 			<h2>{title}</h2>
 
 			<button onClick={() => setHasLiked({ initialState: true })}>
-			{hasLiked.initialState ? 'Liked' : 'Like'}
+			{hasLiked.initialState ? '❤️' : '🤍'}
 			</button>
 		</div>
 	);

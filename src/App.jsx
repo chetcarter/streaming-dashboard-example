@@ -8,8 +8,8 @@ const Card = ({ title }) => {
 		<div className='card'>
 			<h2>{title}</h2>
 
-			<button onClick={() => setHasLiked({ initialState: true })}>
-			{hasLiked.initialState ? '❤️' : '🤍'}
+			<button onClick={() => setHasLiked(!hasLiked)}>
+			{hasLiked ? '❤️' : '🤍'}
 			</button>
 		</div>
 	);
